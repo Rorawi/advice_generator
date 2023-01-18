@@ -61,14 +61,50 @@ span {
     font-size: 3rem;
 }
 
-.welcome-text {
+.medium-text {
     font-family: 'Manrope', sans-serif;
     color: white;
 }
 
-.welcome-text a {
+.medium-text a {
     text-decoration: none;
     color: hsl(150, 99%, 55%);
+}
+
+.status-text {
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+    color: hsl(150, 100%, 40%);
+}
+
+.status-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.status-textbox {
+    background-color: #313A49;
+    border: 2px solid hsla(193, 23%, 72%, 0.806);
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 10px;
+
+    width: 250px;
+    height: 200px;
+    margin: 15px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.status-textbox:hover {
+    border: 2px solid hsl(150, 99%, 55%);
+    transition: 0.3s;
+}
+
+.status {
+    text-align: center;
 }
 
 /*Advice Container*/
@@ -171,6 +207,20 @@ span {
         background-color: hsl(150, 99%, 55%);
         border-radius: 5px;
     }
+
+    .status-textbox {
+        background-color: #313A49;
+        max-width: 500px;
+        padding: 30px;
+        border-radius: 10px;
+    
+        width: 150px;
+        height: 150px;
+        margin: 15px;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    
 }
 
 
