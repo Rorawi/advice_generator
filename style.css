@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #202632;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    position: relative;
+}
+
+.container {
+    background-color: #313A49;
+    max-width: 300px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+
+
+.advice-num {
+    color: hsl(150, 100%, 66%);
+    font-family: 'Manrope', sans-serif;
+}
+
+.advice {
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    font-size: 28px;
+    text-align: center;
+}
+
+.design {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.line {
+    border-bottom: 1px solid hsl(193, 38%, 86%);
+    width: 130px;
+}
+
+.quotation-like-design {
+    width: 6px;
+    height: 18px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.random-button {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: hsl(150, 100%, 66%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 234px;
+    border: 0;
+}
+
+.random-button:hover {
+    /* box-shadow: 5px 5px 12px hsl(150, 100%, 66%); */
+    box-shadow: 0px 0px 30px 5px hsl(150, 100%, 66%);
+
+}
+
+@media screen and (min-width:375px) {
+    .random-button {
+        left: 181px;
+    }
+}
+
+@media screen and (min-width:1045px) {
+    .random-button {
+        left: 488px;
+    }
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
