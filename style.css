@@ -14,7 +14,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 90vh;
-    position: relative;
+    /* position: relative; */
 }
 
 .container {
@@ -58,17 +58,19 @@ body {
     background-color: white;
 }
 
+.btn-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .random-button {
     width: 55px;
     height: 55px;
     border-radius: 50%;
     background-color: hsl(150, 100%, 66%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    left: 234px;
     border: 0;
+    margin-bottom: -50px;
 }
 
 .random-button:hover {
@@ -77,17 +79,13 @@ body {
 
 }
 
-@media screen and (min-width:375px) {
-    .random-button {
-        left: 181px;
+@media screen and (max-width:375px) {
+    .container {
+        max-width: 200px;
     }
 }
 
-@media screen and (min-width:1045px) {
-    .random-button {
-        left: 488px;
-    }
-}
+
 
 
 .attribution {
