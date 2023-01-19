@@ -5,98 +5,167 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./swiper-bundle.min.css">
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/w.png">
 
-  <title>Frontend Mentor | Advice generator app</title>
+  <title>WI_ADVICE Advice generator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  
+
 </head>
 
 <body>
 
-<div class="header">
-  <div class="navigation">
-    <a href="#" class="brand">wi_Advice</a>
-    <div class="menu-btn">
-      <box-icon name='menu' class="menu-icon"></box-icon>
-    </div>
-    <div class="nav-items">
-      <a href="#">Home</a>
-      <a href="#">Home</a>
-      <a href="#">Home</a>
-      <a href="#">Home</a>
+  <div class="header">
+    <div class="navigation">
+      <a href="#" class="brand">wi_Advice</a>
+      <div class="menu-btn">
+        <box-icon name='menu' class="menu-icon"></box-icon>
+      </div>
+            <!-- <div class="overlay"></div> -->
+      <div class="nav-items">
+        <a href="#status">Status</a>
+        <a href="#about">About</a>
+        <a href="#">Login</a>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="welcome">
-  <h1 class="medium-text">
-    <span>WI_ADVICE</span><br/>
-    Are you stucked on something?... <br/>trying to figure out the best solution to your misunderstanding?<br/>
-    Here's the best solution. Vist our <a href="#main-container">advice platform</a> to help you!
-  </h1>
-  <div class="welcome-img"> 
-    <lottie-player src="https://lottie.host/0a5aa9d4-9ea3-40f9-9151-1b7b94f9e79c/07cEIRtizT.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+  <div class="welcome">
+    <h1 class="medium-text welcome-text">
+      <span class="topic">WI_ADVICE</span><br />
+      Are you stucked on something?... <br />Trying to figure out the best solution to your misunderstanding?<br />
+      Here's the best option you could think of!<br /> Vist our <a href="#main-container">advice platform</a> to help
+      you!
+    </h1>
+    <div class="welcome-img">
+      <lottie-player src="https://lottie.host/0a5aa9d4-9ea3-40f9-9151-1b7b94f9e79c/07cEIRtizT.json"
+        background="transparent" speed="1" loop autoplay id="lottie-player"></lottie-player>
+    </div>
   </div>
-</div>
 
-<div class="status-div">
+  <div class="status-div" id="status">
+    <h1 class="status-text">
+      What is your status now?
+    </h1>
+
+    <div class="status-container">
+      <div class="status-textbox">
+        <h1 class="medium-text status">
+          <iconify-icon icon="tabler:mood-sad-2" style="color: #1db56d;" width="100"></iconify-icon>
+          <br />
+          Sad
+        </h1>
+      </div>
+      <div class="status-textbox">
+        <h1 class="medium-text status">
+          <iconify-icon icon="ph:smiley-nervous" style="color: #1db56d;" width="100"></iconify-icon>
+          <br />
+          Nervous
+        </h1>
+      </div>
+      <div class="status-textbox">
+        <h1 class="medium-text status">
+          <iconify-icon icon="bx:angry" style="color: #1db56d;" width="100"></iconify-icon>
+          <br />
+          Angry
+        </h1>
+      </div>
+      <div class="status-textbox">
+        <h1 class="medium-text status">
+          <iconify-icon icon="icon-park-outline:confused-face" style="color: #1db56d;" width="100"></iconify-icon>
+          <br />
+          Confused
+        </h1>
+      </div>
+      <div class="status-textbox">
+        <h1 class="medium-text status">
+          <iconify-icon icon="fa-solid:tired" style="color: #1db56d;" width="100"></iconify-icon>
+          <br />
+          Depressed
+        </h1>
+      </div>
+      <div class="status-textbox">
+        <h1 class="medium-text status">
+          <iconify-icon icon="fluent-emoji-high-contrast:worried-face" style="color: #1db56d;"
+            width="100"></iconify-icon>
+          <br />
+          Worried
+        </h1>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="about-us" id="about">
+    <h1 class="medium-text about-topic">
+      What they say about our quotes.
+    </h1>
+  </div>
+
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="comment_data">
+          <h2 class="commentor-name">
+            Asantewaa
+          </h2>
+  
+          <p class="medium-text">
+             <span class="comment-quotation">"</span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            A mollitia culpa, rerum facilis aspernatur laudantium commodi! <span class="comment-quotation">"</span></p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="comment_data">
+          <h2 class="commentor-name">
+            Asante
+          </h2>
+  
+          <p class="medium-text">
+             <span class="comment-quotation">"</span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            A mollitia culpa, rerum facilis aspernatur laudantium commodi! <span class="comment-quotation">"</span></p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="comment_data">
+          <h2 class="commentor-name">
+           Winifred
+          </h2>
+  
+          <p class="medium-text">
+             <span class="comment-quotation">"</span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            A mollitia culpa, rerum facilis aspernatur laudantium commodi! <span class="comment-quotation">"</span></p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="comment_data">
+          <h2 class="commentor-name">
+            Adwoa
+          </h2>
+  
+          <p class="medium-text">
+             <span class="comment-quotation">"</span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            A mollitia culpa, rerum facilis aspernatur laudantium commodi! <span class="comment-quotation">"</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
   <h1 class="status-text">
-      What is your status now?    
+    Enjoy and motivate yourself!
   </h1>
-
-  <div class="status-container">
-    <div class="status-textbox">
-      <h1 class="medium-text status">
-        <iconify-icon icon="tabler:mood-sad-2" style="color: #1db56d;" width="100"></iconify-icon>
-        <br/>
-              Sad
-      </h1>
-    </div>
-    <div class="status-textbox">
-      <h1 class="medium-text status">
-        <iconify-icon icon="ph:smiley-nervous"style="color: #1db56d;" width="100"></iconify-icon>   
-        <br/>
-              Nervous
-      </h1>
-    </div>
-    <div class="status-textbox">
-      <h1 class="medium-text status">
-        <iconify-icon icon="bx:angry" style="color: #1db56d;" width="100"></iconify-icon>
-        <br/>
-                Angry
-      </h1>
-    </div>
-    <div class="status-textbox">
-      <h1 class="medium-text status">
-        <iconify-icon icon="icon-park-outline:confused-face" style="color: #1db56d;" width="100"></iconify-icon>
-        <br/>
-                Confused
-      </h1>
-    </div>
-    <div class="status-textbox">
-      <h1 class="medium-text status">
-        <iconify-icon icon="fa-solid:tired" style="color: #1db56d;" width="100"></iconify-icon>
-        <br/>
-               Depressed
-      </h1>
-    </div>
-    <div class="status-textbox">
-      <h1 class="medium-text status">
-        <iconify-icon icon="fluent-emoji-high-contrast:worried-face" style="color: #1db56d;" width="100"></iconify-icon>
-        <br/>
-                Worried
-      </h1>
-    </div>
-    
-  </div>
-
-</div>
-
-
-
 
   <div class="main-container" id="main-container">
     <div class="container">
@@ -117,14 +186,44 @@
     </div>
   </div>
   <!-- Advice text goes here -->
-
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Winifred Asantewaa Asante</a>.
-  </div><script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+  </div>
+
+  <footer>
+    <div class="footer">
+      <a href="#" class="brand">wi_Advice</a>
+      <p>We are here to guide you on the right path to go! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  </div>
+  <div class="social">
+    <h3 class="footer_title">
+        Follow Us
+    </h3>
+
+    <ul class="footer_socials">
+        <a href="#" class="footer_social-link" target="_blank">
+          <box-icon type='logo' name='github'></box-icon>
+                      </a>
+        <a href="#" class="footer_social-link" target="_blank">
+          <box-icon type='logo' name='linkedin-square'></box-icon>
+                </a>
+        <a href="#" class="footer_social-link" target="_blank">
+          <box-icon type='logo' name='instagram'></box-icon>
+        </a>
+    </ul>
+</div>
+</div>
+</div>
+  </footer>
+ 
+  <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <script src="./js/swiper-bundle.min.js"></script>
+
   <script src="./index.js"></script>
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> 
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 </body>
 
 </html>
